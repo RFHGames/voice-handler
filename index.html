@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+        <meta
+            http-equiv="Content-Security-Policy"
+            content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'"
+        />
+        <link href="./styles.css" rel="stylesheet" />
+        <title>Voice Handler</title>
+    </head>
+    <body>
+        <div class="loading"><p>Loading...</p></div>
+
+        <div class="wrapper">
+          <div class="current_wrapper">
+            <p class="current_title">Current Audio File</p>
+            <p class="current">0001.wav</p>
+            
+            <div class="controller_wrapper">
+              <button class="btn prev_btn" type="button">&lt;</button>
+              <button class="btn play_btn" type="button">Play Current File</button>
+              <button class="btn next_btn" type="button">&gt;</button>
+            </div>
+  
+            <div class="controller_wrapper">
+              <button class="btn save_btn" type="button">Save As</button>
+              <button class="btn append_btn" type="button">Append</button>
+            </div>
+
+            <div class="controller_wrapper">
+              <button class="btn jump_btn" type="button">Jump To</button>
+            </div>
+          </div>
+  
+          <!--<div class="dialogue_wrapper">
+            <p class="dialogue_title">Current Dialogue Line</p>
+            <p class="dialogue">"<span>There was no telling whose child, exactly, the leporid was carrying, but both Sophie and Adelaide were more than happy to help.</span>"</p>
+          </div>-->
+        </div>
+
+        <!-- You can also require other files to run in this process -->
+        <script src="./renderer.js"></script>
+    </body>
+</html>

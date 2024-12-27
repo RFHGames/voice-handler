@@ -1,0 +1,13 @@
+{
+    "name": "voice-handler",
+    "version": "1.0.0",
+    "description": "",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron ."
+    },
+    "author": "MadCreativity",
+    "devDependencies": {
+        "electron": "^33.2.1"
+    }
+}
